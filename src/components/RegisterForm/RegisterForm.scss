@@ -1,0 +1,97 @@
+.FormContainer {
+    display: flex;
+    flex-direction: column;
+    
+    input {
+        border-radius: 1rem;
+        border: none;
+        padding: 12px 20px;
+        margin: .5rem 4rem;
+        &::placeholder {
+            color: $color-grey;
+            margin-left: 1rem;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+      input {
+        margin: .5rem 2rem;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      input {
+        margin: .5rem .7rem;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      input {
+        margin: .5rem .7rem;
+        width: 25rem;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      input {
+        margin: .5rem .7rem;
+        width: 16.5rem;
+      }
+    }
+    .TextArea {
+        padding: 12px 20px;
+        margin: .5rem 4rem;
+        height: 10rem;
+        border-radius: .2rem;
+        border: none;
+        &::placeholder {
+            color: $color-grey;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+      .TextArea {
+        margin: .5rem 2rem;
+      }
+    }
+    @media only screen and (max-width: 1024px) {
+      .TextArea {
+        margin: .5rem .7rem;
+      }
+    }
+    .btn_contact {
+            background-color: #202F50;
+            border: 0;
+            border-radius: 100px;
+            box-sizing: border-box;
+            color: $color-white;
+            font-size: 1rem;
+            font-weight: 400;
+            padding: 1rem 0;
+            text-align: center;
+            cursor: pointer;
+            margin: .5rem 4rem;
+            border-radius: 1rem;
+
+            &:hover,
+            &:focus { 
+              background-color: #4377C8;
+              color: #ffffff;
+            }
+            
+            &:active {
+              background: #4377C8;
+              color: rgb(255, 255, 255, .7);
+            }
+            
+          }
+          @media only screen and (max-width: 1024px) {
+            .btn_contact {
+              margin: .5rem 2rem;
+            }
+          }
+          @media only screen and (max-width: 768px) {
+            .btn_contact {
+              margin: .5rem .7rem;
+            }
+          }
+}
+.Thanking {
+  border: solid $color-white 3px;
+  text-align: center;
+}
